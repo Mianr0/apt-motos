@@ -1,0 +1,196 @@
+<!-- style="background: rgb(37,4,70); background:
+-webkit-linear-gradient(rgba(37,4,70,0.11248249299719892) 38%,
+rgba(37,4,70,0.9248074229691877) 100%); background:
+-o-linear-gradient(rgba(37,4,70,0.11248249299719892) 38%,
+rgba(37,4,70,0.9248074229691877) 100%); background:
+linear-gradient(rgba(37,4,70,0.11248249299719892) 38%,
+rgba(37,4,70,0.9248074229691877) 100%);" >
+ -->
+<main class="main">
+  <img
+    src="https://www.incolmotos-yamaha.com.co/wp-content/uploads/2025/10/cryptonFinn_6MP7315.jpg"
+    alt="imagen del hero"
+  />
+  <div class="content">
+    <div class="box">
+      <h2>APT MOTOS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum
+        aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
+        id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
+      </p>
+      <a href=""><span>Ver más</span></a>
+    </div>
+    <div class="box">
+      <h2>APT SERVICIOS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum
+        aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
+        id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
+      </p>
+      <a href=""><span>Ver más</span></a>
+    </div>
+    <div class="box">
+      <h2>APT VENTAS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum
+        aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
+        id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
+      </p>
+      <a href=""><span>Ver más</span></a>
+    </div>
+    <div class="box">
+      <h2>APT CONTACTO</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum
+        aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
+        id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
+      </p>
+      <a href=""><span>Ver más</span></a>
+    </div>
+  </div>
+</main>
+
+<style>
+  .main {
+    padding-inline: 2.5vw;
+  }
+  .main::before {
+    content: "";
+    background: transparent
+      url(https://tympanus.net/Tutorials/CSS3FullscreenSlideshow/images/pattern.png)
+      repeat top left;
+    width: 95vw;
+    height: 84vh;
+    z-index: 1;
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+  }
+  img {
+    width: 95vw;
+    height: 84vh;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 25px;
+  }
+  .content {
+    z-index: 2;
+    position: relative;
+    display: grid;
+    /* Desktop: 4 columnas en línea */
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    height: 84vh;
+    gap: 1rem;
+  }
+
+  h2,
+  p {
+    color: #fff;
+  }
+  h2 {
+    font-size: 1.5vw;
+  }
+  p {
+    font-size: 1vw;
+    line-height: 1.4;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  span {
+    padding: 1rem 2.3rem;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 1.2vw;
+  }
+  .box {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: 85%;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-right: 1px solid #aaa;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Eliminar el borde derecho del último elemento en cada fila */
+  .box:nth-child(4) {
+    border-right: none;
+  }
+
+  /* Tablet: 2x2 grid */
+  @media screen and (max-width: 1024px) {
+    .content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    h2 {
+      font-size: 3vw;
+    }
+    p {
+      font-size: 2.2vw;
+    }
+    /* Eliminar borde derecho de elementos pares */
+    .box:nth-child(even) {
+      border-right: none;
+    }
+    .box:nth-child(4) {
+      border-right: 1px solid #bbb;
+    }
+    img {
+      height: 200vh;
+    }
+    .content {
+      height: 200vh;
+    }
+    .main::before {
+      height: 200vh;
+    }
+  }
+
+  /* Mobile: 1 columna (1 div por línea) */
+  @media screen and (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr;
+      height: auto;
+      min-height: 84vh;
+      padding-inline: 2rem;
+      gap: 0;
+    }
+    .box {
+      width: 100%;
+      height: auto;
+      min-height: 300px;
+      border-right: none;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .box:last-child {
+      border-bottom: none;
+      border-right: none;
+    }
+    h2 {
+      font-size: 6vw;
+    }
+    p {
+      font-size: 4vw;
+    }
+    img {
+      height: 400vh;
+    }
+    .content {
+      height: 400vh;
+    }
+    .main::before {
+      height: 400vh;
+    }
+  }
+</style>
