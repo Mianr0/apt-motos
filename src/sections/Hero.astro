@@ -19,7 +19,7 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
         aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
         id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
       </p>
-      <a href=""><span>Ver más</span></a>
+      <a href="/motos"><span>Ver más</span></a>
     </div>
     <div class="box">
       <h2>APT SERVICIOS</h2>
@@ -28,7 +28,7 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
         aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
         id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
       </p>
-      <a href=""><span>Ver más</span></a>
+      <a href="/servicios"><span>Ver más</span></a>
     </div>
     <div class="box">
       <h2>APT VENTAS</h2>
@@ -37,7 +37,7 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
         aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
         id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
       </p>
-      <a href=""><span>Ver más</span></a>
+      <a href="/ventas"><span>Ver más</span></a>
     </div>
     <div class="box">
       <h2>APT CONTACTO</h2>
@@ -46,7 +46,7 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
         aspernatur nihil nesciunt quia, porro corporis ex nobis quaerat corrupti
         id dolorum cum alias reprehenderit eligendi et soluta illo repudiandae!
       </p>
-      <a href=""><span>Ver más</span></a>
+      <a href="/contacto"><span>Ver más</span></a>
     </div>
   </div>
 </main>
@@ -54,6 +54,7 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
 <style>
   .main {
     padding-inline: 2.5vw;
+    margin-top: 15vh;
   }
   .main::before {
     content: "";
@@ -98,13 +99,24 @@ rgba(37,4,70,0.9248074229691877) 100%);" >
   }
   a {
     text-decoration: none;
+    font-weight: bold;
     color: #fff;
+  }
+  a:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
   }
   span {
     padding: 1rem 2.3rem;
     border: 2px solid #fff;
     border-radius: 25px;
-    font-size: 1.2vw;
+    font-size: 1rem;
+  }
+  span:hover {
+    color: #000;
+    background-color: rgba(180, 180, 180, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   }
   .box {
     display: grid;

@@ -1,0 +1,78 @@
+<footer>
+  <div class="logo">
+    <img src="/src/assets/astro.svg" alt="" />
+  </div>
+  <div class="copyright">
+    <small
+      >© {new Date().getFullYear()} APT Motos. Todos los derechos reservados. Toda
+      reproducción total o parcial está estrictamente prohibido.
+    </small>
+  </div>
+  <div class="sections">
+    <small>APT MOTOS</small>
+    <small>APT SERVICIOS</small>
+    <small>APT VENTAS</small>
+    <small>APT CONTACTO</small>
+  </div>
+  <div class="info">
+    <small>Horario de Atención</small>
+    <small>Lunes a Viernes</small>
+    <small>9:00 a 18:00</small>
+  </div>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding-block: 1rem;
+    padding-inline: 4rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 25%;
+  }
+  .sections {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    align-items: center;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    align-items: center;
+  }
+  @media screen and (max-width: 700px) {
+    footer {
+      flex-direction: column;
+    }
+    .copyright {
+      max-width: 100%;
+    }
+    .sections {
+      max-width: 100%;
+      flex-direction: row;
+      gap: 1rem;
+    }
+    .info {
+      max-width: 100%;
+      flex-direction: row;
+      gap: 1rem;
+    }
+  }
+</style>
